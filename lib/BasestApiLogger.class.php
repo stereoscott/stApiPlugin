@@ -65,7 +65,7 @@ class BasestApiLogger implements stApiLoggerInterface
       
       $suffix = isset($options['suffix']) ? $suffix : '';
       
-      $fileName = time().'_'.$method.'_request'.$suffix'.txt';
+      $fileName = time().'_'.$method.'_request'.$suffix.'.txt';
 
       file_put_contents($this->logDir.'/'.$fileName, $request);
 
