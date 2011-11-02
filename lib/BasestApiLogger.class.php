@@ -69,7 +69,7 @@ class BasestApiLogger implements stApiLoggerInterface
 
       file_put_contents($this->logDir.'/'.$fileName, $request);
 
-      $fileName = time().'_'.$method.'_response'.$suffix'.txt';
+      $fileName = time().'_'.$method.'_response'.$suffix.'.txt';
 
       file_put_contents($this->logDir.'/'.$fileName, $response);
     }
